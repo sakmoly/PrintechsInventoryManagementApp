@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.printechsapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".material_transfer.TransferItemsListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".material_transfer.MaterialTransfer"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".material_transfer.OrderItemsListMT"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".material_transfer.SearchOrdersMT"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".material_transfer.MaterialTransferScanning"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".material_receipt.MaterialItemsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".material_receipt.OrderItemsMR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".material_receipt.SearchOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".material_receipt.MaterialReciptScanning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".material_receipt.MaterialReceipt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PriceVarification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchBarcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".physical_stock_count.StockTake_List"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".physical_stock_count.Show_ReciptData"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".physical_stock_count.PhysicalStockScanning"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SyncActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".physical_stock_count.PhysicalStockList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>
